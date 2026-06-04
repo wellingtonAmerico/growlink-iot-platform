@@ -170,7 +170,7 @@ Physical prototype developed during project validation.
 
 ### Smart Greenhouse
 
-![Prototype](docs/prototype/estufa.jpg)
+![Prototype](docs/prototype/estufa.jpeg)
 
 ### Hardware Assembly
 
