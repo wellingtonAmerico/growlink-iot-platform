@@ -6,6 +6,12 @@ The system combines Arduino hardware, wireless communication, a PostgreSQL datab
 
 ---
 
+## System Demonstration
+
+![GrowLink Demo](docs/prototype/prototype.gif)
+
+---
+
 ## Overview
 
 The platform was created as a final graduation project with the objective of applying concepts from:
