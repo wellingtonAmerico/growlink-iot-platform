@@ -1,176 +1,204 @@
-# GrowLink IoT Platform
+# GrowLink - IoT Platform for Smart Cultivation Automation
 
-IoT automation platform developed as a Computer Engineering graduation project.
+GrowLink is an IoT platform developed to monitor and automate small-scale cultivation environments through sensors, actuators and a mobile application.
 
-The system allows remote monitoring and control of cultivation environments through a mobile application connected to sensors and actuators managed by Arduino devices.
+The system combines Arduino hardware, wireless communication, a PostgreSQL database and a React application, allowing users to monitor environmental conditions and control devices remotely in real time.
 
 ---
 
 ## Overview
 
-GrowLink was created to automate small cultivation environments by providing:
+The platform was created as a final graduation project with the objective of applying concepts from:
 
-- Remote monitoring
-- Environmental data collection
-- Irrigation control
-- Lighting control
-- Ventilation control
-- Parameter management
+* Internet of Things (IoT)
+* Embedded Systems
+* Mobile Development
+* Database Management
+* Automation and Monitoring Systems
 
-The platform combines mobile development, databases, embedded systems and IoT communication.
+GrowLink continuously collects environmental data and automatically controls irrigation, lighting and ventilation according to user-defined parameters.
 
 ---
 
-## Architecture
+## Main Features
 
-Mobile App (React)
+### Environmental Monitoring
+
+* Temperature monitoring
+* Humidity monitoring
+* Light intensity monitoring
+
+### Automation
+
+* Automatic irrigation control
+* Automatic lighting control
+* Automatic ventilation control
+
+### Remote Control
+
+Users can manually control all devices through the application:
+
+* Turn irrigation on/off
+* Turn lighting on/off
+* Turn ventilation on/off
+
+### User Management
+
+* User registration
+* Authentication system
+* Personalized cultivation settings
+
+### Data Persistence
+
+All information is stored in PostgreSQL:
+
+* Sensor readings
+* Automation parameters
+* Device status
+* User accounts
+
+---
+
+## System Architecture
+
+```text
+User
 
 ↓
 
-Node.js Backend
+React Application
 
 ↓
 
 PostgreSQL Database
 
+↙           ↘
+
+Arduino      Sensor Data
+
 ↓
 
-Arduino Controller
+Actuators
 
-↓
-
-Sensors & Actuators
-
-- Temperature sensor
-- Humidity sensor
-- Lighting system
-- Irrigation system
-- Ventilation system
+• Irrigation
+• Lighting
+• Ventilation
+```
 
 ---
 
-## Features
+## Technology Stack
 
-### User Management
+### Mobile Application
 
-- User registration
-- Authentication
-- User login
+* React
+* JavaScript
 
-### Monitoring
+### Backend & Database
 
-- Temperature monitoring
-- Humidity monitoring
-- Luminosity monitoring
-
-### Automation
-
-- Irrigation control
-- Lighting control
-- Ventilation control
-
-### Configuration
-
-- Sensor registration
-- Cultivation parameter registration
-
----
-
-## Technologies
-
-### Frontend
-
-- React
-- JavaScript
-
-### Backend
-
-- Node.js
-
-### Database
-
-- PostgreSQL
+* PostgreSQL
+* Sequelize ORM
 
 ### Hardware
 
-- Arduino
-- Environmental sensors
-- Relay modules
+* Arduino
+* DHT Temperature/Humidity Sensor
+* Light Sensor
+* Relays
+* Irrigation Pump
+* Ventilation System
+* Lighting System
 
-### Tools
+### Infrastructure
 
-- Git
-- GitHub
-
----
-
-## Screenshots
-
-### Login Screen
-
-[imagem]
-
-### Dashboard
-
-[imagem]
-
-### Parameter Registration
-
-[imagem]
-
-### Sensor Registration
-
-[imagem]
-
----
-
-## Hardware Prototype
-
-The project was validated using a physical prototype composed of:
-
-- Arduino controller
-- Irrigation pump
-- Ventilation cooler
-- Lighting system
-- Environmental sensors
-- Pepper plant cultivation chamber
-
-[foto do protótipo]
+* Wi-Fi Communication
+* Git
+* GitHub
 
 ---
 
 ## Project Structure
 
-```bash
+```text
 growlink-iot-platform/
-│
+
 ├── app/
+│   ├── assets/
+│   ├── config/
+│   ├── migrations/
+│   ├── models/
+│   ├── views/
+│   ├── App.js
+│   └── package.json
+│
 ├── arduino/
+│   ├── arduino_compilation_estufa_code/
+│   └── mega_compilation/
+│
 ├── docs/
+│   ├── screenshots/
+│   └── prototype/
+│
 └── README.md
 ```
 
 ---
 
-## What I Learned
+## Screenshots
 
-- Mobile development
-- Database modeling
-- REST integrations
-- Embedded systems
-- IoT architecture
-- Sensor communication
-- Automation systems
+### Login
+
+![Login](docs/screenshots/login.jpg)
+
+### Dashboard
+
+![Dashboard](docs/screenshots/dashboard.jpg)
+
+### Sensors Management
+
+![Sensors](docs/screenshots/sensores.jpg)
+
+### Parameters Configuration
+
+![Parameters](docs/screenshots/parametros.jpg)
+
+---
+
+## Prototype
+
+Physical prototype developed during project validation.
+
+### Smart Greenhouse
+
+![Prototype](docs/prototype/estufa.jpg)
+
+### Hardware Assembly
+
+![Hardware](docs/prototype/hardware.jpg)
+
+---
+
+## Key Learnings
+
+* IoT architecture design
+* Embedded systems integration
+* Mobile application development
+* Real-time monitoring systems
+* Database modeling
+* Sensor and actuator communication
+* Automation logic implementation
+* End-to-end project development
 
 ---
 
 ## Future Improvements
 
-- Real-time communication
-- Notification system
-- Historical charts
-- Multi-device support
-- Cloud deployment
+* Push notifications
+* Historical charts and analytics
+* Multiple cultivation profiles
+* Cloud deployment
+* MQTT communication
+* Web dashboard
 
 ---
 
@@ -179,7 +207,7 @@ growlink-iot-platform/
 Wellington Américo
 
 LinkedIn:
-https://www.linkedin.com/in/wellington-américo/
+https://www.linkedin.com/in/wellington-am%C3%A9rico/
 
 GitHub:
 https://github.com/wellingtonAmerico
