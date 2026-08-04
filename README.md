@@ -1,7 +1,7 @@
 
 Aplicação mobile e backend para monitoramento e automação de estufas utilizando **React Native, Node.js, MySQL e ESP8266**.
 
-## 📱 Screenshots
+## Screenshots
 
 | Login | Dashboard |
 |------|-----------|
@@ -13,7 +13,7 @@ Aplicação mobile e backend para monitoramento e automação de estufas utiliza
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
 ### Mobile
 - React Native
@@ -34,7 +34,7 @@ Aplicação mobile e backend para monitoramento e automação de estufas utiliza
 
 ---
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 
 ```text
 mobile/
@@ -45,7 +45,7 @@ docs/
 
 ---
 
-## ✅ Funcionalidades
+## Funcionalidades
 
 - Autenticação de usuários
 - Cadastro de sensores
@@ -58,7 +58,7 @@ docs/
 
 ---
 
-## ⚙️ Executando localmente
+## Executando localmente
 
 ### Backend
 
@@ -84,7 +84,7 @@ npx expo start
 
 ---
 
-## 🧪 Dados de demonstração
+## Dados de demonstração
 
 ```sql
 INSERT INTO Medicaos
@@ -95,7 +95,7 @@ VALUES
 
 ---
 
-## 🔮 Próximas melhorias
+## Próximas melhorias
 
 - Integração MQTT
 - Deploy em nuvem
@@ -105,6 +105,6 @@ VALUES
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 **Wellington Américo**

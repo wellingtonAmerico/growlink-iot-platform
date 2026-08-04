@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -177,7 +179,8 @@ function pad(num, size) {
   return ('0000' + num).slice(size * -1);
 }
 
-let port = process.env.PORT || 3000;
-app.listen(port, (req, res) => {
-  console.log('Servidor Conectado');
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor conectado na porta ${PORT}`);
 });
