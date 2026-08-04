@@ -181,6 +181,35 @@ function pad(num, size) {
 
 const PORT = process.env.PORT || 3000;
 
+app.get('/seed-demo', async (req, res) => {
+  try {
+    const { User, Medicao } = require('./models');
+
+    let user = await User.findOne({ where: { user: 'Admin' } });
+
+    if (!user) {
+      user = await User.create({
+        nome: 'Wellington',
+        user: 'Admin',
+        senha: '1234',
+      });
+    }
+
+    await Medicao.create({
+      dataHora: new Date(),
+      medicaoLuz: 650.5,
+      medicaoUmi: 62.3,
+      medicaoTemp: 24.8,
+      userID: user.id,
+    });
+
+    res.json({ message: 'Dados de demonstração inseridos com sucesso' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Erro ao inserir dados de demonstração' });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Servidor conectado na porta ${PORT}`);
 });
