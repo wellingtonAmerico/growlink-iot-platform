@@ -1,1 +1,1 @@
-export const API_URL = 'http://192.168.15.146:3000';
+export const API_URL = 'https://growlink-iot-platform.onrender.com';
