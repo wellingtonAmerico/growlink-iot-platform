@@ -95,6 +95,14 @@ VALUES
 
 ---
 
+## 🌐 Live API
+
+Backend disponível em produção:
+
+https://growlink-iot-platform.onrender.com
+
+---
+
 ## Próximas melhorias
 
 - Integração MQTT
