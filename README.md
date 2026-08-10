@@ -18,13 +18,24 @@ https://expo.dev/accounts/wellingtonamerico/projects/GrowLink/builds/feb5308f-47
 
 ## Screenshots
 
-| Login | Dashboard |
-| ----- | --------- |
-| ![](docs/screenshots/login.jpeg) | ![](docs/screenshots/dashboard.jpeg) |
-
-| Sensores | Parâmetros |
-| -------- | ---------- |
-| ![](docs/screenshots/sensores.jpeg) | ![](docs/screenshots/parametros.jpeg) |
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Dashboard</th>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/login.jpeg" width="220"/></td>
+    <td><img src="docs/screenshots/dashboard.jpg" width="220"/></td>
+  </tr>
+  <tr>
+    <th>Sensores</th>
+    <th>Parâmetros</th>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/sensores.jpg" width="220"/></td>
+    <td><img src="docs/screenshots/parametros.jpg" width="220"/></td>
+  </tr>
+</table>
 
 ---
 
