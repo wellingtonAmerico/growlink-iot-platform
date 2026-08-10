@@ -1,34 +1,60 @@
+# GrowLink IoT Platform
+
+![React Native](https://img.shields.io/badge/React%20Native-20232A?logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
 
 Aplicação mobile e backend para monitoramento e automação de estufas utilizando **React Native, Node.js, MySQL e ESP8266**.
+
+---
+
+## Download do APK
+
+Link para instalação da versão Android:
+
+https://expo.dev/accounts/wellingtonamerico/projects/GrowLink/builds/feb5308f-47b1-41ea-a17e-9468769a2fa8
+
+---
 
 ## Screenshots
 
 | Login | Dashboard |
-|------|-----------|
-| ![](docs/screenshots/login.jpeg) | ![](docs/screenshots/home-dashboard.jpeg) |
+| ----- | --------- |
+| ![](docs/screenshots/login.jpeg) | ![](docs/screenshots/dashboard.jpeg) |
 
 | Sensores | Parâmetros |
-|---------|-------------|
-| ![](docs/screenshots/sensor-form.jpeg) | ![](docs/screenshots/parameter-form.jpeg) |
+| -------- | ---------- |
+| ![](docs/screenshots/sensores.jpeg) | ![](docs/screenshots/parametros.jpeg) |
 
 ---
 
 ## Tecnologias
 
 ### Mobile
+
 - React Native
 - Expo SDK 49
 - React Navigation
+- AsyncStorage
 
 ### Backend
+
 - Node.js
 - Express
 - Sequelize
 
 ### Banco de dados
-- MySQL
+
+- MySQL (Aiven)
+
+### Infraestrutura
+
+- Render
+- Aiven
+- Expo EAS Build
 
 ### Hardware
+
 - ESP8266
 - Arduino Mega
 
@@ -48,13 +74,27 @@ docs/
 ## Funcionalidades
 
 - Autenticação de usuários
+- Cadastro de usuários
 - Cadastro de sensores
 - Cadastro de parâmetros
 - Monitoramento de temperatura
 - Monitoramento de umidade
 - Monitoramento de luminosidade
 - Controle de dispositivos
+- Alertas automáticos
 - Integração com banco MySQL
+
+---
+
+## API em produção
+
+Backend disponível em produção:
+
+https://growlink-iot-platform.onrender.com
+
+Endpoint de demonstração:
+
+https://growlink-iot-platform.onrender.com/getUltimosValores
 
 ---
 
@@ -65,7 +105,7 @@ docs/
 ```bash
 cd backend
 npm install
-npm run dev
+npm start
 ```
 
 ### Banco de dados
@@ -95,24 +135,20 @@ VALUES
 
 ---
 
-## 🌐 Live API
-
-Backend disponível em produção:
-
-https://growlink-iot-platform.onrender.com
-
----
-
 ## Próximas melhorias
 
 - Integração MQTT
-- Deploy em nuvem
 - Autenticação JWT
 - Dashboard Web
 - Notificações push
+- Integração com hardware em tempo real
 
 ---
 
-##  Autor
+## Autor
 
-**Wellington Américo**
+Wellington Américo
+
+LinkedIn: https://www.linkedin.com/in/wellington-am%C3%A9rico/
+
+GitHub: https://github.com/wellingtonAmerico
