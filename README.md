@@ -52,17 +52,18 @@ A testable Android build is available through Expo:
 
 ---
 
-##  Architecture
+## Architecture
 
+```text
 ┌──────────────────────┐
 │    React Native      │
-│    Mobile App        │
+│     Mobile App       │
 └──────────┬───────────┘
            │
            │ HTTP / API
            ↓
 ┌──────────────────────┐
-│    Node.js + Express │
+│   Node.js + Express  │
 │       Backend        │
 └──────────┬───────────┘
            │
@@ -79,6 +80,7 @@ A testable Android build is available through Expo:
 │ ESP8266 / Arduino    │
 │ Sensors & Devices    │
 └──────────────────────┘
+```
 
 ---
 
@@ -199,6 +201,7 @@ VALUES
 
 ## Project Structure
 
+```text
 growlink-iot-platform/
 │
 ├── mobile/
@@ -214,6 +217,7 @@ growlink-iot-platform/
 │   └── Screenshots and documentation
 │
 └── README.md
+```
 
 ---
 
